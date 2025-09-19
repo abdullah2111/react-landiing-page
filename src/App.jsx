@@ -1,3 +1,6 @@
+import avtarPic from "./assets/avatar/michael-gouch.png";
+import service1 from "./assets/features/feature-1.png";
+import service2 from "./assets/features/feature-2.png";
 import CompanyIcon from "./components/CompanyIcon";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -11,7 +14,6 @@ import ServiceList from "./components/ServiceList";
 import { BaseSvg } from "./components/Svg";
 import Testimonial from "./components/Testimonial";
 import "./index.css";
-
 function App() {
   return (
     <>
@@ -67,14 +69,14 @@ function App() {
           </ServiceFeature>
           <img
             className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
-            src="./src/assets/features/feature-1.png"
+            src={service1}
             alt="dashboard feature image"
           />
         </div>
         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
           <img
             className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
-            src="./src/assets/features/feature-2.png"
+            src={service2}
             alt="dashboard feature image"
           />
           <ServiceFeature
@@ -155,7 +157,7 @@ function App() {
         quote='"Landwind is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."'
         authorName="Micheal Gough"
         authorTitle="CEO at Google"
-        avatarSrc="./src/assets/avatar/michael-gouch.png"
+        avatarSrc={avtarPic}
       />
       <Pricing>
         <ServiceCard

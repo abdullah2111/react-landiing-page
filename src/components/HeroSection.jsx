@@ -1,3 +1,5 @@
+import hero from "../assets/hero.png";
+
 export default function HeroSection() {
   return (
     <section className="bg-white dark:bg-gray-900">
@@ -67,7 +69,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <img src="./src/assets/hero.png" alt="hero image" />
+          <img src={hero} alt="hero image" />
         </div>
       </div>
     </section>
